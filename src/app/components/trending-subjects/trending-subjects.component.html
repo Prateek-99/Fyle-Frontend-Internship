@@ -1,0 +1,8 @@
+<button routerLink="/" type="button" class="back-button">Back</button>
+<div *ngIf="allBooks.length > 0">
+  <front-end-internship-assignment-table-view
+  [booksList]="allBooks"
+  [subjectName]="subjectName"
+  ></front-end-internship-assignment-table-view>
+</div>
+<ngx-spinner>Loading......</ngx-spinner>
